@@ -7,7 +7,8 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
-#include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -25,8 +26,8 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::Button button1;
-    touchgfx::Button button2;
+    touchgfx::Image a1;
+    touchgfx::ButtonWithLabel buttonWithLabel1;
 
 private:
 

@@ -3,17 +3,22 @@
 /*********************************************************************************/
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include "BitmapDatabase.hpp"
+#include <texts/TextKeysAndLanguages.hpp>
+#include <touchgfx/Color.hpp>
 
 Screen1ViewBase::Screen1ViewBase()
 {
-    button1.setXY(35, 82);
-    button1.setBitmaps(Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    a1.setXY(0, 0);
+    a1.setBitmap(Bitmap(BITMAP_A_ID));
 
-    button2.setXY(35, 194);
-    button2.setBitmaps(Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    buttonWithLabel1.setXY(35, 130);
+    buttonWithLabel1.setBitmaps(Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    buttonWithLabel1.setLabelText(TypedText(T_SINGLEUSEID1));
+    buttonWithLabel1.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    buttonWithLabel1.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
 
-    add(button1);
-    add(button2);
+    add(a1);
+    add(buttonWithLabel1);
 }
 
 void Screen1ViewBase::setupScreen()

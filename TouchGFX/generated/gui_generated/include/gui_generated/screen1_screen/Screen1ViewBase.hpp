@@ -26,6 +26,7 @@ protected:
      * Member Declarations
      */
     touchgfx::Button button1;
+    touchgfx::Button button2;
 
 private:
 

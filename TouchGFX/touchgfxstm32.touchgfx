@@ -37,7 +37,7 @@
             "Style": "Style4",
             "Name": "buttonWithLabel1",
             "X": 35,
-            "Y": 130,
+            "Y": 70,
             "Width": 170,
             "Height": 60,
             "Type": "ButtonWithLabel",

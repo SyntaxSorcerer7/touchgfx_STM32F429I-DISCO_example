@@ -9,6 +9,7 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -17,6 +18,14 @@ public:
     virtual ~Screen1ViewBase() {}
 
     virtual void setupScreen();
+
+    /*
+     * Custom Action Handlers
+     */
+    virtual void helloButtonWasClicked()
+    {
+        // Override and implement this function in Screen1View
+    }
 
 protected:
     FrontendApplication& application() {
@@ -28,8 +37,19 @@ protected:
      */
     touchgfx::Image a1;
     touchgfx::ButtonWithLabel buttonWithLabel1;
+    touchgfx::TextAreaWithOneWildcard textArea1;
 
 private:
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
 
 };
 

@@ -6,7 +6,8 @@
 #include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Color.hpp>
 
-Screen1ViewBase::Screen1ViewBase()
+Screen1ViewBase::Screen1ViewBase() :
+    buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
 {
     a1.setXY(0, 0);
     a1.setBitmap(Bitmap(BITMAP_A_ID));
@@ -16,12 +17,31 @@ Screen1ViewBase::Screen1ViewBase()
     buttonWithLabel1.setLabelText(TypedText(T_SINGLEUSEID1));
     buttonWithLabel1.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     buttonWithLabel1.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    buttonWithLabel1.setAction(buttonCallback);
+
+    textArea1.setPosition(20, 181, 200, 75);
+    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(97, 97, 97));
+    textArea1.setLinespacing(0);
+    textArea1.setWildcard(TypedText(T_SINGLEUSEID3).getText());
+    textArea1.setTypedText(TypedText(T_SINGLEUSEID2));
 
     add(a1);
     add(buttonWithLabel1);
+    add(textArea1);
 }
 
 void Screen1ViewBase::setupScreen()
 {
 
+}
+
+void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &buttonWithLabel1)
+    {
+        //sayHello
+        //When buttonWithLabel1 clicked call virtual function
+        //Call helloButtonWasClicked
+        helloButtonWasClicked();
+    }
 }

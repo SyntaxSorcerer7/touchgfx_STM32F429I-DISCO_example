@@ -54,7 +54,7 @@ UART_HandleTypeDef huart1;
 
 osThreadId defaultTaskHandle;
 /* USER CODE BEGIN PV */
-
+osThreadId LEDThread1Handle;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -70,7 +70,7 @@ extern void GRAPHICS_MainTask(void);
 void StartDefaultTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
-
+void LED_Thread1(void const * argument);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -112,6 +112,12 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
+  HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+  HAL_Delay(500);
+  HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+  HAL_Delay(500);
+  HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+
   /* USER CODE END 2 */
 
 /* Initialise the graphical hardware */
@@ -144,7 +150,12 @@ int main(void)
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
+  osThreadDef(LED1, LED_Thread1, osPriorityNormal, 0,
+  configMINIMAL_STACK_SIZE);
+  /* Start thread 1 */
+  LEDThread1Handle = osThreadCreate(osThread(LED1), NULL);
+
+
   /* USER CODE END RTOS_THREADS */
 
   /* Start scheduler */
@@ -443,6 +454,12 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void LED_Thread1(void const * argument){
+	for(;;){
+		osDelay(500);
+		HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+	}
+}
 
 /* USER CODE END 4 */
 

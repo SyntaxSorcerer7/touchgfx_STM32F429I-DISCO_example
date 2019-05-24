@@ -1,0 +1,5 @@
+TypedTextDatabase.cpp:40:43:const touchgfx::TypedText::TypedTextData* TypedTextDatabase::getInstance(touchgfx::LanguageId)	16	static
+TypedTextDatabase.cpp:45:10:uint16_t TypedTextDatabase::getInstanceSize()	4	static
+TypedTextDatabase.cpp:50:30:const touchgfx::Font* const* TypedTextDatabase::getFonts()	4	static
+TypedTextDatabase.cpp:54:1:void __static_initialization_and_destruction_0(int, int)	16	static
+TypedTextDatabase.cpp:54:1:cpp)	8	static

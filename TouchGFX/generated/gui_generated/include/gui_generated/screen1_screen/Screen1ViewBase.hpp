@@ -37,7 +37,7 @@ protected:
      */
     touchgfx::Image a1;
     touchgfx::ButtonWithLabel buttonWithLabel1;
-    touchgfx::TextAreaWithOneWildcard textArea1;
+    touchgfx::TextAreaWithOneWildcard tempText;
 
 private:
 

@@ -63,7 +63,7 @@
               "UseBuffer": false,
               "BufferSize": 0
             },
-            "Name": "textArea1",
+            "Name": "tempText",
             "X": 20,
             "Y": 181,
             "Width": 200,

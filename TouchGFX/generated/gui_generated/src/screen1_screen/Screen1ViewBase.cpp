@@ -19,15 +19,15 @@ Screen1ViewBase::Screen1ViewBase() :
     buttonWithLabel1.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     buttonWithLabel1.setAction(buttonCallback);
 
-    textArea1.setPosition(20, 181, 200, 75);
-    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(97, 97, 97));
-    textArea1.setLinespacing(0);
-    textArea1.setWildcard(TypedText(T_SINGLEUSEID3).getText());
-    textArea1.setTypedText(TypedText(T_SINGLEUSEID2));
+    tempText.setPosition(20, 181, 200, 75);
+    tempText.setColor(touchgfx::Color::getColorFrom24BitRGB(97, 97, 97));
+    tempText.setLinespacing(0);
+    tempText.setWildcard(TypedText(T_SINGLEUSEID3).getText());
+    tempText.setTypedText(TypedText(T_SINGLEUSEID2));
 
     add(a1);
     add(buttonWithLabel1);
-    add(textArea1);
+    add(tempText);
 }
 
 void Screen1ViewBase::setupScreen()

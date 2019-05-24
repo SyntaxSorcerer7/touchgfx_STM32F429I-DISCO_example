@@ -868,10 +868,10 @@ uint32_t LCD_IO_ReadData(uint16_t RegValue, uint8_t ReadSize)
   * @brief  Wait for loop in ms.
   * @param  Delay in ms.
   */
-void LCD_Delay(uint32_t Delay)
+/*void LCD_Delay(uint32_t Delay)
 {
   HAL_Delay(Delay);
-}
+} */
 
 /*******************************************************************************
                             LINK OPERATIONS

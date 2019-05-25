@@ -13,16 +13,14 @@ public:
     virtual void tearDownScreen();
     void foo();
     void handleTickEvent(){
-    	count++;
-    	foo();
+    	//foo();
     }
     void helloButtonWasClicked(){
-    	count++;
     	foo();
     }
 protected:
-    int count = 0;
-    Unicode::UnicodeChar txtBuffer[1];
+    int count = 1;
+    Unicode::UnicodeChar txtBuffer[1] = { 2 };
 };
 
 #endif // SCREEN1_VIEW_HPP

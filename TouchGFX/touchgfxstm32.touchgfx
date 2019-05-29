@@ -4,9 +4,9 @@
       {
         "Components": [
           {
-            "RelativeFilename": "a.png",
+            "RelativeFilename": "bg.png",
             "Alpha": 255,
-            "Name": "a1",
+            "Name": "bg",
             "X": 0,
             "Y": 0,
             "Width": 240,
@@ -19,28 +19,512 @@
             "Moveable": false
           },
           {
-            "Pressed": "__designer\\blue_buttons_round_edge_small_pressed.png",
-            "Released": "__designer\\blue_buttons_round_edge_small.png",
-            "Alpha": 255,
-            "TextId": "SingleUseId1",
-            "ReleasedColor": {
+            "Components": [
+              {
+                "Components": [
+                  {
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "BorderColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "BorderSize": 5,
+                    "Alpha": 84,
+                    "Name": "boxWithBorder1",
+                    "X": 0,
+                    "Y": 62,
+                    "Width": 240,
+                    "Height": 223,
+                    "Type": "BoxWithBorder",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "TextId": "SingleUseId16",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 97,
+                      "Green": 97,
+                      "Blue": 97
+                    },
+                    "Alpha": 255,
+                    "AutoSize": false,
+                    "LineSpacing": 0,
+                    "Wildcard1": {
+                      "TextId": "SingleUseId17",
+                      "UseBuffer": true,
+                      "BufferSize": 3
+                    },
+                    "Name": "tempText",
+                    "X": 5,
+                    "Y": 85,
+                    "Width": 230,
+                    "Height": 35,
+                    "Type": "TextArea",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "TextId": "SingleUseId18",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 97,
+                      "Green": 97,
+                      "Blue": 97
+                    },
+                    "Alpha": 255,
+                    "AutoSize": false,
+                    "LineSpacing": 0,
+                    "Wildcard1": {
+                      "TextId": "SingleUseId19",
+                      "UseBuffer": true,
+                      "BufferSize": 5
+                    },
+                    "Name": "presText",
+                    "X": 5,
+                    "Y": 120,
+                    "Width": 230,
+                    "Height": 35,
+                    "Type": "TextArea",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "TextId": "SingleUseId20",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 97,
+                      "Green": 97,
+                      "Blue": 97
+                    },
+                    "Alpha": 255,
+                    "AutoSize": false,
+                    "LineSpacing": 0,
+                    "Wildcard1": {
+                      "TextId": "SingleUseId21",
+                      "UseBuffer": true,
+                      "BufferSize": 3
+                    },
+                    "Name": "humidityText",
+                    "X": 5,
+                    "Y": 155,
+                    "Width": 230,
+                    "Height": 35,
+                    "Type": "TextArea",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Color": {
+                      "Red": 84,
+                      "Green": 144,
+                      "Blue": 186
+                    },
+                    "Direction": "Right",
+                    "Alpha": 158,
+                    "FileNameBackground": "__designer\\blue_progressindicators_bg_small_progress_indicator_bg_square_0_degrees.png",
+                    "IndicatorPositionX": 2,
+                    "IndicatorPositionY": 2,
+                    "IndicatorPositionWidth": 100,
+                    "IndicatorPositionHeight": 10,
+                    "ProgressRangeMin": 0,
+                    "ProgressRangeMax": 100,
+                    "ProgressRangeSteps": 0,
+                    "ProgressRangeStepsMin": 0,
+                    "ProgressInitialValue": 60,
+                    "Name": "progressWater",
+                    "X": 99,
+                    "Y": 216,
+                    "Width": 104,
+                    "Height": 14,
+                    "Type": "BoxProgress",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "RelativeFilename": "growth.png",
+                    "Alpha": 110,
+                    "Name": "image1",
+                    "X": 12,
+                    "Y": 198,
+                    "Width": 64,
+                    "Height": 64,
+                    "Type": "Image",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "TextId": "SingleUseId99",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 214,
+                      "Green": 214,
+                      "Blue": 214
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txtoverview",
+                    "X": 12,
+                    "Y": 19,
+                    "Width": 93,
+                    "Height": 25,
+                    "Type": "TextArea",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "Name": "overview",
+                "X": 0,
+                "Y": 0,
+                "Width": 240,
+                "Height": 320,
+                "Type": "Container",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Components": [
+                  {
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "BorderColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "BorderSize": 5,
+                    "Alpha": 84,
+                    "Name": "boxWithBorder1_1",
+                    "X": 0,
+                    "Y": 62,
+                    "Width": 240,
+                    "Height": 223,
+                    "Type": "BoxWithBorder",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "PaddingBefore": 0,
+                    "PaddingAfter": 0,
+                    "Snapping": false,
+                    "IsHorizontal": false,
+                    "IsCircular": false,
+                    "ItemTemplateName": "historyRecord",
+                    "NumberofItems": 15,
+                    "InitialElement": 0,
+                    "ItemMargin": 0,
+                    "Easing": "Back",
+                    "EasingOption": "Out",
+                    "SwipeAcceleration": 1.0,
+                    "DragAcceleration": 1.0,
+                    "Name": "tempHistory",
+                    "X": 7,
+                    "Y": 67,
+                    "Width": 228,
+                    "Height": 208,
+                    "Type": "ScrollList",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "TextId": "SingleUseId100",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 214,
+                      "Green": 214,
+                      "Blue": 214
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txthistory",
+                    "X": 12,
+                    "Y": 19,
+                    "Width": 193,
+                    "Height": 25,
+                    "Type": "TextArea",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "Name": "tempHistoryView",
+                "X": 0,
+                "Y": 0,
+                "Width": 240,
+                "Height": 320,
+                "Type": "Container",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Components": [
+                  {
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "BorderColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "BorderSize": 5,
+                    "Alpha": 84,
+                    "Name": "boxWithBorder1_1_1",
+                    "X": 0,
+                    "Y": 62,
+                    "Width": 240,
+                    "Height": 223,
+                    "Type": "BoxWithBorder",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "PaddingBefore": 0,
+                    "PaddingAfter": 0,
+                    "Snapping": false,
+                    "IsHorizontal": false,
+                    "IsCircular": false,
+                    "ItemTemplateName": "historyRecord",
+                    "NumberofItems": 15,
+                    "InitialElement": 0,
+                    "ItemMargin": 0,
+                    "Easing": "Back",
+                    "EasingOption": "Out",
+                    "SwipeAcceleration": 1.0,
+                    "DragAcceleration": 1.0,
+                    "Name": "humidityHistory",
+                    "X": 7,
+                    "Y": 67,
+                    "Width": 228,
+                    "Height": 208,
+                    "Type": "ScrollList",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "TextId": "SingleUseId101",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 214,
+                      "Green": 214,
+                      "Blue": 214
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txtHistoryHumidity",
+                    "X": 12,
+                    "Y": 19,
+                    "Width": 172,
+                    "Height": 25,
+                    "Type": "TextArea",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "Name": "humidityHistoryView",
+                "X": 0,
+                "Y": 0,
+                "Width": 240,
+                "Height": 320,
+                "Type": "Container",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Components": [
+                  {
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "BorderColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "BorderSize": 5,
+                    "Alpha": 84,
+                    "Name": "boxWithBorder1_1_1_1",
+                    "X": 0,
+                    "Y": 62,
+                    "Width": 240,
+                    "Height": 223,
+                    "Type": "BoxWithBorder",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "PaddingBefore": 0,
+                    "PaddingAfter": 0,
+                    "Snapping": false,
+                    "IsHorizontal": false,
+                    "IsCircular": false,
+                    "ItemTemplateName": "historyRecord",
+                    "NumberofItems": 15,
+                    "InitialElement": 0,
+                    "ItemMargin": 0,
+                    "Easing": "Back",
+                    "EasingOption": "Out",
+                    "SwipeAcceleration": 1.0,
+                    "DragAcceleration": 1.0,
+                    "Name": "pressureHistory",
+                    "X": 7,
+                    "Y": 67,
+                    "Width": 228,
+                    "Height": 208,
+                    "Type": "ScrollList",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "TextId": "SingleUseId102",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 214,
+                      "Green": 214,
+                      "Blue": 214
+                    },
+                    "Alpha": 255,
+                    "AutoSize": true,
+                    "LineSpacing": 0,
+                    "Name": "txtHistoryPressure",
+                    "X": 12,
+                    "Y": 19,
+                    "Width": 172,
+                    "Height": 25,
+                    "Type": "TextArea",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "Name": "presureHistoryView",
+                "X": 0,
+                "Y": 0,
+                "Width": 240,
+                "Height": 320,
+                "Type": "Container",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "SwipeCutoff": 50,
+            "ShowPageIndicator": true,
+            "PageIndicatorX": 90,
+            "PageIndicatorY": 300,
+            "CenteredX": false,
+            "IndicatorImageNormal": "__designer\\blue_pageindicator_dot_indicator_small_normal.png",
+            "IndicatorImageHighlight": "__designer\\blue_pageindicator_dot_indicator_small_highlight.png",
+            "EndSwipeElasticWidth": 50,
+            "SelectedPage": "presureHistoryView",
+            "Style": "Style1",
+            "Name": "swipeContainer1",
+            "X": 0,
+            "Y": 0,
+            "Width": 240,
+            "Height": 320,
+            "Type": "SwipeContainer",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "gardenData",
+        "OverrideDefaultBufferSize": true,
+        "CanvasBufferSize": 4600
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Components": [
+          {
+            "Color": {
               "Red": 255,
               "Green": 255,
               "Blue": 255
             },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0",
-            "Style": "Style4",
-            "Name": "buttonWithLabel1",
-            "X": 35,
-            "Y": 70,
-            "Width": 170,
-            "Height": 60,
-            "Type": "ButtonWithLabel",
+            "Alpha": 151,
+            "Name": "box1",
+            "X": 1,
+            "Y": 3,
+            "Width": 226,
+            "Height": 25,
+            "Type": "Box",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -48,27 +532,85 @@
             "Moveable": false
           },
           {
-            "TextId": "SingleUseId2",
+            "TextId": "SingleUseId94",
             "TextRotation": "0",
             "Color": {
-              "Red": 97,
-              "Green": 97,
-              "Blue": 97
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
             },
             "Alpha": 255,
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "TextId": "SingleUseId3",
-              "UseBuffer": false,
-              "BufferSize": 0
+              "TextId": "SingleUseId95",
+              "UseBuffer": true,
+              "BufferSize": 20
             },
-            "Name": "tempText",
-            "X": 20,
-            "Y": 181,
-            "Width": 200,
-            "Height": 75,
+            "Name": "dateTxt",
+            "X": 4,
+            "Y": 6,
+            "Width": 145,
+            "Height": 19,
             "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId96",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId103",
+              "UseBuffer": true,
+              "BufferSize": 4
+            },
+            "Wildcard2": {
+              "TextId": "SingleUseId98",
+              "UseBuffer": true,
+              "BufferSize": 4
+            },
+            "Name": "valueTxt",
+            "X": 153,
+            "Y": 6,
+            "Width": 70,
+            "Height": 19,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "StartX": 1,
+            "StartY": 1,
+            "EndX": 1,
+            "EndY": 20,
+            "LineWidth": 1,
+            "LineEndingStyle": "Round",
+            "Name": "line1",
+            "X": 149,
+            "Y": 5,
+            "Width": 3,
+            "Height": 22,
+            "Type": "Line",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -76,37 +618,367 @@
             "Moveable": false
           }
         ],
-        "Interactions": [
-          {
-            "InteractionName": "sayHello",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "buttonWithLabel1",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "FunctionName": "helloButtonWasClicked",
-              "Type": "ActionCustom"
-            }
-          }
-        ],
-        "Name": "Screen1",
-        "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
+        "Interactions": [],
+        "Name": "historyRecord",
+        "X": 0,
+        "Y": 0,
+        "Width": 228,
+        "Height": 30,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
       }
     ],
-    "CustomContainerDefinitions": [],
     "TextEntries": [
       {
-        "TextEntryId": "SingleUseId1",
+        "TextEntryId": "SingleUseId16",
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId2",
+        "TextEntryId": "SingleUseId17",
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId3",
+        "TextEntryId": "SingleUseId18",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId19",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId20",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId21",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId22",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId23",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId24",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId25",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId26",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId27",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId28",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId29",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId30",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId31",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId32",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId33",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId34",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId35",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId36",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId37",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId38",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId39",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId40",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId41",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId42",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId43",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId44",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId45",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId46",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId47",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId48",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId49",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId50",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId51",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId52",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId53",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId54",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId55",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId56",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId57",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId58",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId59",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId60",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId61",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId62",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId63",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId64",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId65",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId66",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId67",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId68",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId69",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId70",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId71",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId72",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId73",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId74",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId75",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId76",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId77",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId78",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId79",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId80",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId81",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId82",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId83",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId84",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId85",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId86",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId87",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId88",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId89",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId90",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId91",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId92",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId93",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId94",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId95",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId96",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId98",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId99",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId100",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId101",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId102",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId103",
         "IsResource": false
       }
     ],
@@ -116,7 +988,7 @@
       "Height": 320
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Screen1",
+    "StartupScreenName": "gardenData",
     "SelectedStartupLanguage": "GB",
     "Skin": "Blue",
     "TouchGfxPath": "../Middlewares/ST/TouchGFX/touchgfx/",
@@ -137,7 +1009,7 @@
       "AvailableResolutions": [],
       "PhysicalButtons": [],
       "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j10",
-      "PostGenerateCommand": "touchgfx update_project --project-file=../TrueStudio/touchgfxstm32/.project --gui-group-name=Application/User/TouchGFX/gui --generated-group-name=Application/User/TouchGFX/generated ",
+      "PostGenerateCommand": "touchgfx update_project --project-file=../.project --gui-group-name=Application/User/TouchGFX/gui --generated-group-name=Application/User/TouchGFX/generated ",
       "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j10",
       "RunSimulatorCommand": "build\\bin\\simulator.exe",
       "CompileTargetCommand": "",

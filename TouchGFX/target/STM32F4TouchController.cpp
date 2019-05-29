@@ -1,12 +1,12 @@
 #include <STM32F4TouchController.hpp>
 
 /* USER CODE BEGIN BSP user includes */
-
+#include "stm32f429i_discovery_ts.h"
 /* USER CODE END BSP user includes */
 
 extern "C"
 {
-#include "stm32f429i_discovery_ts.h"
+
 uint32_t LCD_GetXSize();
 uint32_t LCD_GetYSize();
 }

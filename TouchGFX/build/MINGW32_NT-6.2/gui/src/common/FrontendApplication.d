@@ -38,7 +38,7 @@ build/MINGW32_NT-6.2/gui/src/common/FrontendApplication.o: \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/JSMOCHelper.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/mvp/Presenter.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/mvp/MVPHeap.hpp \
- gui/include/gui/model/Model.hpp
+ gui/include/gui/model/Model.hpp gui/include/gui/model/../info.h
 
 gui/include/gui/common/FrontendApplication.hpp:
 
@@ -117,3 +117,5 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 ../Middlewares/ST/TouchGFX/touchgfx///framework/include/mvp/MVPHeap.hpp:
 
 gui/include/gui/model/Model.hpp:
+
+gui/include/gui/model/../info.h:

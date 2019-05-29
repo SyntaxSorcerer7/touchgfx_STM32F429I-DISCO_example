@@ -1,6 +1,6 @@
 #ifndef MODEL_HPP
 #define MODEL_HPP
-
+#include "../info.h"
 class ModelListener;
 
 /**
@@ -40,6 +40,7 @@ protected:
      * Pointer to the currently active presenter.
      */
     ModelListener* modelListener;
+    void readQueue();
 };
 
 #endif /* MODEL_HPP */

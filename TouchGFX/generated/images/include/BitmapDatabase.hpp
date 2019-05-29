@@ -7,8 +7,11 @@
 #include <touchgfx/Bitmap.hpp>
 
 const uint16_t BITMAP_A_ID = 0; // Size: 240x320 pixels
-const uint16_t BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID = 1; // Size: 170x60 pixels
-const uint16_t BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID = 2; // Size: 170x60 pixels
+const uint16_t BITMAP_BG_ID = 1; // Size: 240x320 pixels
+const uint16_t BITMAP_BLUE_PAGEINDICATOR_DOT_INDICATOR_SMALL_HIGHLIGHT_ID = 2; // Size: 15x15 pixels
+const uint16_t BITMAP_BLUE_PAGEINDICATOR_DOT_INDICATOR_SMALL_NORMAL_ID = 3; // Size: 15x15 pixels
+const uint16_t BITMAP_BLUE_PROGRESSINDICATORS_BG_SMALL_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID = 4; // Size: 104x14 pixels
+const uint16_t BITMAP_GROWTH_ID = 5; // Size: 64x64 pixels
 
 namespace BitmapDatabase
 {

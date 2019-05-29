@@ -2,7 +2,7 @@
 #define MODELLISTENER_HPP
 
 #include <gui/model/Model.hpp>
-
+#include "../info.h"
 /**
  * ModelListener is the interface through which the Model can inform the currently
  * active presenter of events. All presenters should derive from this class.
@@ -16,9 +16,8 @@ class ModelListener
 {
 public:
     ModelListener() : model(0) {}
-
     virtual ~ModelListener() {}
-
+    virtual void valueChanged(const SensorRecord& rec){};
     /**
      * Sets the model pointer to point to the Model object. Called automatically
      * when switching screen.

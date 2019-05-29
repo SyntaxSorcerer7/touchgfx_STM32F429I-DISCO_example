@@ -37,24 +37,53 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/JSMOCHelper.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/mvp/Presenter.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/mvp/MVPHeap.hpp \
- gui/include/gui/model/Model.hpp gui/include/gui/common/FrontendHeap.hpp \
+ gui/include/gui/model/Model.hpp gui/include/gui/model/../info.h \
+ gui/include/gui/common/FrontendHeap.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/transitions/NoTransition.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
- gui/include/gui/screen1_screen/Screen1View.hpp \
- generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
- gui/include/gui/screen1_screen/Screen1Presenter.hpp \
+ gui/include/gui/gardendata_screen/gardenDataView.hpp \
+ generated/gui_generated/include/gui_generated/gardendata_screen/gardenDataViewBase.hpp \
+ gui/include/gui/gardendata_screen/gardenDataPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
+ gui/include/gui/gardendata_screen/../info.h \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Widget.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Button.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/AbstractButton.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/TypedText.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/Texts.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/SwipeContainer.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/ListLayout.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/TiledImage.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/BoxWithBorder.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/FontManager.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/TypedText.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/Texts.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/progress_indicators/BoxProgress.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Box.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/EasingEquations.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ gui/include/gui/containers/historyRecord.hpp \
+ generated/gui_generated/include/gui_generated/containers/historyRecordBase.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/Line.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/transforms/DisplayTransformation.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ gui/include/gui/containers/../info.h \
  generated/texts/include/texts/TextKeysAndLanguages.hpp
 
 generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
@@ -133,6 +162,8 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 
 gui/include/gui/model/Model.hpp:
 
+gui/include/gui/model/../info.h:
+
 gui/include/gui/common/FrontendHeap.hpp:
 
 generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
@@ -141,32 +172,88 @@ generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 
-gui/include/gui/screen1_screen/Screen1View.hpp:
+gui/include/gui/gardendata_screen/gardenDataView.hpp:
 
-generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
+generated/gui_generated/include/gui_generated/gardendata_screen/gardenDataViewBase.hpp:
 
-gui/include/gui/screen1_screen/Screen1Presenter.hpp:
+gui/include/gui/gardendata_screen/gardenDataPresenter.hpp:
 
 gui/include/gui/model/ModelListener.hpp:
+
+gui/include/gui/gardendata_screen/../info.h:
 
 ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Image.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Widget.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/SwipeContainer.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Button.hpp:
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/ListLayout.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/AbstractButton.hpp:
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/TiledImage.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/TypedText.hpp:
-
-../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/Texts.hpp:
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/BoxWithBorder.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/TextArea.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/FontManager.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/TypedText.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/Texts.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/progress_indicators/BoxProgress.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/Box.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/EasingEquations.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+
+gui/include/gui/containers/historyRecord.hpp:
+
+generated/gui_generated/include/gui_generated/containers/historyRecordBase.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/Line.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/transforms/DisplayTransformation.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx///framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
+
+gui/include/gui/containers/../info.h:
 
 generated/texts/include/texts/TextKeysAndLanguages.hpp:

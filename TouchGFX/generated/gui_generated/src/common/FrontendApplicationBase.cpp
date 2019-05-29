@@ -7,8 +7,8 @@
 #include <touchgfx/transitions/NoTransition.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Texts.hpp>
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/gardendata_screen/gardenDataView.hpp>
+#include <gui/gardendata_screen/gardenDataPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -25,16 +25,16 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
 /*
  * Screen Transition Declarations
  */
-// Screen1
+// gardenData
 
-void FrontendApplicationBase::gotoScreen1ScreenNoTransition()
+void FrontendApplicationBase::gotogardenDataScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoScreen1ScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotogardenDataScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()
+void FrontendApplicationBase::gotogardenDataScreenNoTransitionImpl()
 {
-    makeTransition<Screen1View, Screen1Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    makeTransition<gardenDataView, gardenDataPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 

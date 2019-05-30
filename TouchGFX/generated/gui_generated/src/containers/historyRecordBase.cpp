@@ -14,14 +14,14 @@ historyRecordBase::historyRecordBase()
     box1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     box1.setAlpha(151);
 
-    dateTxt.setPosition(4, 6, 145, 19);
+    dateTxt.setPosition(4, 6, 142, 19);
     dateTxt.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     dateTxt.setLinespacing(0);
     Unicode::snprintf(dateTxtBuffer, DATETXT_SIZE, "%s", TypedText(T_SINGLEUSEID95).getText());
     dateTxt.setWildcard(dateTxtBuffer);
     dateTxt.setTypedText(TypedText(T_SINGLEUSEID94));
 
-    valueTxt.setPosition(153, 6, 70, 19);
+    valueTxt.setPosition(150, 6, 74, 19);
     valueTxt.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     valueTxt.setLinespacing(0);
     Unicode::snprintf(valueTxtBuffer1, VALUETXTBUFFER1_SIZE, "%s", TypedText(T_SINGLEUSEID103).getText());
@@ -30,7 +30,7 @@ historyRecordBase::historyRecordBase()
     valueTxt.setWildcard2(valueTxtBuffer2);
     valueTxt.setTypedText(TypedText(T_SINGLEUSEID96));
 
-    line1.setPosition(149, 5, 3, 22);
+    line1.setPosition(145, 5, 3, 22);
     line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     line1.setPainter(line1Painter);
     line1.setStart(1, 1);

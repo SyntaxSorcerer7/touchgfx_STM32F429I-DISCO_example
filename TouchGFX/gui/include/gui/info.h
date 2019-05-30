@@ -6,7 +6,7 @@
 #ifndef SIMULATOR
 struct SensorRecord {
 	uint8_t sensorId;
-	int32_t value;
+	float value;
 	time_t timestamp;
 };
 #endif
@@ -15,7 +15,7 @@ struct SensorRecord {
 #ifdef SIMULATOR
 struct SensorRecord {
 	int sensorId;
-	int value;
+	float value;
 	time_t timestamp;
 };
 #endif

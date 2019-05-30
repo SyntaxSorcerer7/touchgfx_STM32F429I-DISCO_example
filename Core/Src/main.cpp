@@ -36,7 +36,9 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
 //#define DEMO
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -581,7 +583,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 	message = (SensorRecord*) osPoolAlloc(mpool);
 	message->sensorId = rec->sensorId;
 	message->value = rec->value;
-	message->timestamp = getTimestamp();
+	message->timestamp = rec->timestamp;
 	osMessagePut(queue, (uint32_t) message, 1);
 	HAL_UART_Receive_DMA(&huart1, uartDmaRxBuffer, structSize);
 }
@@ -595,21 +597,21 @@ void DemoDataGeneratorTask(void const * argument) {
 		SensorRecord *message;
 		message = (SensorRecord*) osPoolAlloc(mpool);
 		message->sensorId = 0;
-		message->value = i;
+		message->value = (float)i;
 		message->timestamp = getTimestamp();
 		;
 		osMessagePut(queue, (uint32_t) message, osWaitForever);
 		SensorRecord *message2;
 		message2 = (SensorRecord*) osPoolAlloc(mpool);
 		message2->sensorId = 1;
-		message2->value = i;
+		message2->value = (float)i;
 		message2->timestamp = getTimestamp();
 		;
 		osMessagePut(queue, (uint32_t) message2, osWaitForever);
 		SensorRecord *message3;
 		message3 = (SensorRecord*) osPoolAlloc(mpool);
 		message3->sensorId = 2;
-		message3->value = i;
+		message3->value = (float)i;
 		message3->timestamp = getTimestamp();
 		;
 		osMessagePut(queue, (uint32_t) message3, osWaitForever);

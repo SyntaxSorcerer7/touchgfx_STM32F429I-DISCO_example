@@ -16,7 +16,7 @@ void historyRecord::updateValue(const SensorRecord& record){
 	#ifndef SIMULATOR
 
 	this->record = record;
-	Unicode::snprintf(valueTxtBuffer1, VALUETXTBUFFER1_SIZE, "%d", record.value);
+	Unicode::snprintfFloat(valueTxtBuffer1, VALUETXTBUFFER1_SIZE, "%3.1f", record.value);
 	switch(record.sensorId){
 	case 0:
 		Unicode::snprintf(valueTxtBuffer2, VALUETXTBUFFER2_SIZE, " °C");

@@ -38,7 +38,7 @@ protected:
      */
     static const uint16_t DATETXT_SIZE = 20;
     touchgfx::Unicode::UnicodeChar dateTxtBuffer[DATETXT_SIZE];
-    static const uint16_t VALUETXTBUFFER1_SIZE = 4;
+    static const uint16_t VALUETXTBUFFER1_SIZE = 6;
     touchgfx::Unicode::UnicodeChar valueTxtBuffer1[VALUETXTBUFFER1_SIZE];
     static const uint16_t VALUETXTBUFFER2_SIZE = 4;
     touchgfx::Unicode::UnicodeChar valueTxtBuffer2[VALUETXTBUFFER2_SIZE];

@@ -12,14 +12,14 @@ using namespace touchgfx;
 extern touchgfx::InternalFlashFont& getFont_verdana_20_4bpp();
 extern touchgfx::InternalFlashFont& getFont_verdana_40_4bpp();
 extern touchgfx::InternalFlashFont& getFont_verdana_15_4bpp();
-extern touchgfx::InternalFlashFont& getFont_verdana_22_4bpp();
+extern touchgfx::InternalFlashFont& getFont_verdana_21_4bpp();
 
 const touchgfx::Font* const _fonts[] =
 {
     &(getFont_verdana_20_4bpp()),
     &(getFont_verdana_40_4bpp()),
     &(getFont_verdana_15_4bpp()),
-    &(getFont_verdana_22_4bpp())
+    &(getFont_verdana_21_4bpp())
 };
 
 TEXT_LOCATION_FLASH_PRAGMA

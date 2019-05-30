@@ -85,11 +85,11 @@ protected:
     /*
      * Wildcard Buffers
      */
-    static const uint16_t TEMPTEXT_SIZE = 3;
+    static const uint16_t TEMPTEXT_SIZE = 5;
     touchgfx::Unicode::UnicodeChar tempTextBuffer[TEMPTEXT_SIZE];
     static const uint16_t PRESTEXT_SIZE = 5;
     touchgfx::Unicode::UnicodeChar presTextBuffer[PRESTEXT_SIZE];
-    static const uint16_t HUMIDITYTEXT_SIZE = 3;
+    static const uint16_t HUMIDITYTEXT_SIZE = 5;
     touchgfx::Unicode::UnicodeChar humidityTextBuffer[HUMIDITYTEXT_SIZE];
 
 private:

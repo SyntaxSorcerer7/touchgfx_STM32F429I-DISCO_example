@@ -162,7 +162,7 @@ gardenDataViewBase::gardenDataViewBase() :
     swipeContainer1.setPageIndicatorXY(90, 300);
     swipeContainer1.setSwipeCutoff(50);
     swipeContainer1.setEndSwipeElasticWidth(50);
-    swipeContainer1.setSelectedPage(3);
+    swipeContainer1.setSelectedPage(0);
 
     add(bg);
     add(swipeContainer1);

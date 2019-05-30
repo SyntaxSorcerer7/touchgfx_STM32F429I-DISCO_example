@@ -20,14 +20,14 @@ void gardenDataView::tearDownScreen()
 
 void gardenDataView::updateValues(const SensorRecord& rec){
 	if(rec.sensorId==0){
-		Unicode::snprintf(tempTextBuffer, TEMPTEXT_SIZE, "%d", rec.value);
+		Unicode::snprintfFloat(tempTextBuffer, TEMPTEXT_SIZE, "%3.1f", rec.value);
 		tempText.invalidate();
 	} else if (rec.sensorId==1){
-		Unicode::snprintf(humidityTextBuffer, HUMIDITYTEXT_SIZE, "%d", rec.value);
+		Unicode::snprintfFloat(humidityTextBuffer, HUMIDITYTEXT_SIZE, "%3.1f", rec.value);
 		humidityText.invalidate();
 		progressWater.setValue(rec.value);
 	} else if (rec.sensorId==2){
-		Unicode::snprintf(presTextBuffer, PRESTEXT_SIZE, "%d", rec.value);
+		Unicode::snprintfFloat(presTextBuffer, PRESTEXT_SIZE, "%3.1f", rec.value);
 		presText.invalidate();
 	}
 	insertNewHistoryValue(rec);

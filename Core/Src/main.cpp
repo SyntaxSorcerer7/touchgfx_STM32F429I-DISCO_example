@@ -56,17 +56,26 @@ RTC_HandleTypeDef hrtc;
 SPI_HandleTypeDef hspi5;
 
 UART_HandleTypeDef huart1;
+
+//DMA für USART
 DMA_HandleTypeDef hdma_usart1_rx;
 
 osThreadId defaultTaskHandle;
 /* USER CODE BEGIN PV */
 osThreadId demoTaskHandle;
+
+//interthread communication
 osPoolId mpool;
 osMessageQId queue;
+
+
 RTC_TimeTypeDef currentTime;
 RTC_DateTypeDef currentDate;
+
+//Buffer für UART DMA
 const uint16_t structSize = sizeof(SensorRecord);
 uint8_t uartDmaRxBuffer[structSize];
+
 uint8_t buffer[4];
 /* USER CODE END PV */
 

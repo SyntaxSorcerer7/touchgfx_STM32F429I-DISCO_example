@@ -18,6 +18,7 @@ void Model::readQueue() {
 	osEvent evt;
 	do {
 		SensorRecord *rec;
+		//Lese alle Nachrichten aus der Queue
 		evt = osMessageGet(queue, 1);
 		if (evt.status == osEventMessage) {
 			rec = (SensorRecord*) evt.value.p;
@@ -28,6 +29,7 @@ void Model::readQueue() {
 }
 #endif
 
+//jede Sekunde
 int i = 0;
 void Model::tick() {
 	if (i >= 60) {

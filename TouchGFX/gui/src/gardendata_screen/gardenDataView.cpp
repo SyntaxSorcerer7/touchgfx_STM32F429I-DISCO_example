@@ -54,6 +54,8 @@ void gardenDataView::insertNewHistoryValue(const SensorRecord& rec){
 
 	SensorRecord tmp = rec;
 	SensorRecord tmpNext;
+
+	//Verschiebe alle Einträge in der Liste um eins nach unten
 	for(int i=0; i<numberOfItems;i++){
 		tmpNext = targetList->operator [](i).getValue();
 		targetList->operator [](i).updateValue(tmp);
